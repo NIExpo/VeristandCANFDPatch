@@ -1,0 +1,13 @@
+These are the installation instructions to resolve Customer Escalation 1446281: VeriStand CAN FD data replay stops after 261 frames. Three individual issues are fixed:
+
+- Bug 1421727: VeriStand CAN Replay Frame Selection Shows Incorrect Frame IDs if TDMS File Is Longer Than 2400 Bytes
+- Bug 1447952: CAN-FD Replay fails for frames with varying payload length
+- Bug 1447972: VeriStand CAN Replay Frame Selection is unsorted
+
+The included files are compatible with VeriStand 2020 R4 with the included driver set for all RT targets supported by VeriStand. The fixes will also be included in the next release of VeriStand.
+
+To install, unzip the archive “VeriStand Patch Escalation 1446281.zip”. Copy the contents of the folders to the location below:
+
+C:\ProgramData\National Instruments\NI VeriStand 2020\System Explorer\XNET
+
+There is no need to re-image RT targets, as these files are dynamically deployed to the target.
